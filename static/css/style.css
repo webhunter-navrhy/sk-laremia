@@ -303,6 +303,8 @@ figcaption span{opacity:.7}
   .uvod-in,.deti-in,.preklady-in,.prihlaska-in,.kontakt-in,.sekce-hlava{grid-template-columns:1fr}
   .uvod-foto{order:-1}
   .hesla{grid-template-columns:1fr;gap:0}
+  .rejstrik{display:none}
+  .slovnik-bok{margin-bottom:2rem}
   .js .heslo-prepinac{cursor:pointer;position:relative;padding-right:2.5rem;width:100%;box-sizing:border-box}
   .js .heslo-prepinac::after{content:"+";position:absolute;right:.3rem;top:.2rem;font:300 2rem/1 var(--sans);color:var(--zelena-tmava)}
   .js .heslo-prepinac[aria-expanded=true]::after{content:"–"}
