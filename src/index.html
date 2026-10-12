@@ -1,0 +1,150 @@
+{% extends "_base.html" %}
+{% set titulek = 'LAREMIA – jazyková škola Prievidza | kurzy, preklady a tlmočenie' %}
+{% set cesta = '' %}
+{% macro kruzky(cls='') %}<span class="kruzky {{ cls }}" aria-hidden="true"><i></i><i></i><i></i><b></b></span>{% endmacro %}
+{% block obsah %}
+<section class="uvod">
+  <div class="wrap uvod-in">
+    <div class="uvod-text">
+      <p class="nadpis-mal">Jazyková škola · Prievidza</p>
+      <h1>Jazyk sa u&nbsp;nás učíte pri šálke kávy</h1>
+      <p class="perex">Individuálne hodiny, dvojice, malé skupiny po 3&nbsp;–&nbsp;6 ľuďoch, firemné a&nbsp;crash kurzy, online hodiny so zahraničným lektorom, detské kurzy Laremiačik. A&nbsp;keď sa učiť nechcete, preložíme a&nbsp;pretlmočíme to za Vás.</p>
+      <div class="akcie">
+        <a class="btn" href="#vyber">Nájsť si kurz</a>
+        <a class="odkaz" href="#prihlaska">Rovno sa prihlásiť</a>
+      </div>
+      <p class="adresa-mala">G.&nbsp;Švéniho 3E, Prievidza – oproti súdu · <a href="tel:+421948228435">0948 228 435</a> · <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+    </div>
+    <figure class="uvod-foto">
+      {{ img('kava.jpg', 'Lektorka a traja študenti sa smejú pri stole s kávou a čajom počas hodiny', sizes='(min-width: 64rem) 46vw, 100vw') }}
+      <figcaption>Pohodová atmosféra, malé skupiny, káva alebo čaj. <span>(ilustračná fotka)</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sekce vyber" id="vyber">
+  <div class="wrap">
+    <div class="sekce-hlava">
+      <h2>Ktorý kurz je pre Vás?</h2>
+      <p>Vyberte, čo na Vás sedí. Ukážeme Vám heslo v&nbsp;našom „slovníku kurzov“ a&nbsp;prihlášku predvyplníme.</p>
+    </div>
+    <ul class="moznosti" role="list">
+      {% for m in data.sprievodca %}
+      <li><button type="button" class="moznost" data-kurz="{{ m.kurz }}"><span class="moznost-text">{{ m.text }}</span><span class="moznost-heslo"><span aria-hidden="true">→ </span>{{ m.heslo }}</span></button></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce slovnik" id="kurzy">
+  <div class="wrap">
+    <div class="slovnik-bok">
+      <h2>Slovník kurzov</h2>
+      <p>Nezáleží na tom, či chcete individuálne, skupinové, business alebo iné kurzy. Pomôžeme Vám naučiť sa akýkoľvek jazyk – angličtinu, nemčinu, španielčinu, taliančinu aj ďalšie.</p>
+      <ul class="rejstrik" role="list">
+        {% for k in data.kurzy %}<li><a href="#k-{{ k.id }}">{{ k.heslo }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div class="hesla">
+      {% for stlpec in data.kurzy|batch(4) %}<dl class="stlpec">
+      {% for k in stlpec %}
+      <div class="heslo" id="k-{{ k.id }}">
+        <dt><button type="button" class="heslo-prepinac" aria-expanded="true"><span class="heslo-slovo">{{ k.heslo }}</span>{% if k.vyslovnost %} <span class="vysl">{{ k.vyslovnost }}</span>{% endif %} <em class="druh">{{ k.druh }}</em></button></dt>
+        <dd>
+          <p>{{ k.vyklad }}</p>
+          <ul class="fakty" role="list">{% for f in k.fakty %}<li>{{ f }}</li>{% endfor %}</ul>
+          <a class="heslo-akcia" href="#prihlaska" data-kurz="{{ k.id }}">Prihlásiť sa →</a>
+        </dd>
+      </div>
+      {% endfor %}
+      </dl>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce deti" id="deti">
+  <div class="wrap deti-in">
+    <div class="deti-text">
+      <p class="nadpis-mal">Detské kurzy</p>
+      <h2>Laremiačik – jazyk od plienok</h2>
+      <p class="perex">Najlepší čas naučiť sa cudzí jazyk je vtedy, keď sa dieťa učí ten svoj rodný. Hodiny sú dynamické a&nbsp;interaktívne: hry, piesne a&nbsp;aktivity v&nbsp;cudzom jazyku od prvej minúty.</p>
+      <dl class="deti-fakty">
+        <div><dt>Angličtina</dt><dd>od 8 mesiacov</dd></div>
+        <div><dt>Nemčina a španielčina</dt><dd>od 3 rokov</dd></div>
+        <div><dt>V skupine</dt><dd>3 – 6 detí</dd></div>
+        <div><dt>Ako často</dt><dd>1 – 2× týždenne, 30 – 55 min podľa veku</dd></div>
+      </dl>
+      <a class="btn" href="#prihlaska" data-kurz="deti">Prísť na ukážkovú hodinu</a>
+    </div>
+    <div class="deti-bok">
+      <figure class="deti-foto">
+        {{ img('onas.jpg', 'Lektorka s deťmi pri stole počas hodiny v jazykovej škole LAREMIA', sizes='360px') }}
+        <figcaption>Z našej hodiny</figcaption>
+      </figure>
+      <div class="preco">
+        <h3>Prečo začať tak skoro?</h3>
+        <ul role="list">
+          <li>{{ kruzky('mini') }}dáva vyššiu pružnosť v myslení a&nbsp;posilňuje sluch</li>
+          <li>{{ kruzky('mini') }}zlepšuje aj chápanie rodného jazyka</li>
+          <li>{{ kruzky('mini') }}otvára dvere iným kultúram</li>
+          <li>{{ kruzky('mini') }}dáva výhodu pri ďalšom vzdelávaní</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sekce postup">
+  <div class="wrap">
+    <h2>Ako to u nás prebieha</h2>
+    <ol class="kroky" role="list">
+      <li><h3>Vstupný test</h3><p>Zistíme Vašu úroveň. Test je bez poplatku.</p></li>
+      <li><h3>Prihláška a záloha</h3><p>Miesto v&nbsp;kurze je Vaše po vyplnení prihlášky a&nbsp;uhradení zálohy, minimálne 12&nbsp;€.</p></li>
+      <li><h3>Platba</h3><p>Bankovým prevodom alebo v&nbsp;hotovosti v&nbsp;našej kancelárii.</p></li>
+      <li><h3>Školský rok</h3><p>Zimný a&nbsp;letný semester. Po úspešnej úrovňovej skúške (70&nbsp;%) dostanete potvrdenie o&nbsp;absolvovaní.</p></li>
+    </ol>
+    <p class="postup-pod"><a class="odkaz" href="{{ url('podmienky') }}">Všeobecné a storno podmienky</a></p>
+  </div>
+</section>
+
+<section class="sekce preklady" id="preklady">
+  <div class="wrap">
+    <h2>Preklady a tlmočenie</h2>
+    <div class="preklady-in">
+      <div class="heslo heslo-volne">
+        <p><span class="heslo-slovo">Preklad</span> <em class="druh">písomný, overený aj neoverený</em></p>
+        <p>Obchodné a&nbsp;osobné dokumenty, rôzne osvedčenia, posudky a&nbsp;ďalšie texty.</p>
+        <ul class="fakty" role="list"><li>overené aj neoverené preklady</li><li>cena podľa jazyka a dĺžky textu</li></ul>
+      </div>
+      <div class="heslo heslo-volne">
+        <p><span class="heslo-slovo">Tlmočenie</span> <em class="druh">ústny preklad naživo</em></p>
+        <p>Chystáte sa obchodovať so zahraničím a&nbsp;necítite sa na priamu komunikáciu v&nbsp;cudzom jazyku? Zamestnávať tlmočníka je nepraktické, my Vám ho zabezpečíme.</p>
+        <ul class="fakty" role="list"><li>rokovania aj telekonferencie</li><li>sadzba podľa miesta a jazyka</li></ul>
+      </div>
+    </div>
+    <p class="preklady-cta"><a class="btn" href="mailto:{{ site.kontakt.email }}?subject=Preklad%20%2F%20tlmo%C4%8Denie">Poslať text na nacenenie</a> <span>alebo napíšte termín tlmočenia, cenu Vám povieme vopred.</span></p>
+  </div>
+</section>
+
+<section class="sekce prihlaska" id="prihlaska">
+  <div class="wrap prihlaska-in">
+    <div class="prihlaska-bok">
+      <h2>Prihláška</h2>
+      <p>Vyplňte, čo viete, zvyšok doladíme spolu. Alebo nám napíšte na <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a>.</p>
+      <p>Potom sa Vám ozveme a&nbsp;dohodneme vstupný test, ktorý je bez poplatku.</p>
+      <p class="vybrane" hidden>Vybraný kurz: <strong></strong></p>
+      <div class="kontakt" id="kontakt">
+        <h3>Kde nás nájdete</h3>
+        <p class="velka">Gustáva Švéniho, vchod 3E<br>971 01 Prievidza</p>
+        <p class="sivy">Oproti súdu. <a class="odkaz" href="https://www.openstreetmap.org/search?query=Gust%C3%A1va%20%C5%A0v%C3%A9niho%203E%2C%20Prievidza" rel="noopener">Otvoriť v&nbsp;mape</a></p>
+        <p class="kontakt-riadok"><span>Telefón</span><a href="tel:+421948228435">0948 228 435</a></p>
+        <p class="kontakt-riadok"><span>E-mail</span><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+        <p class="kontakt-riadok"><span>Facebook</span><a href="https://www.facebook.com/LaremiaPD" rel="noopener">LaremiaPD</a></p>
+      </div>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+
+{% endblock %}

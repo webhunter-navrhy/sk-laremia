@@ -1,0 +1,34 @@
+{% extends "_base.html" %}
+{% set titulek = 'Všeobecné a storno podmienky – LAREMIA, jazyková škola Prievidza' %}
+{% set popis = 'Podmienky účasti na jazykovom kurze v jazykovej škole LAREMIA s.r.o.: prihláška, záloha, platba, školský rok, storno hodín.' %}
+{% set cesta = 'podmienky/' %}
+{% block obsah %}
+<section class="sekce podmienky">
+  <div class="wrap uzky">
+    <p class="nadpis-mal"><a href="{{ url('') }}">LAREMIA</a> · podmienky</p>
+    <h1>Všeobecné podmienky účasti na jazykovom kurze</h1>
+    <ol class="body">
+      <li>Klient má nárok na vstupný test bez poplatku za jeho spracovanie.</li>
+      <li>Miesto v&nbsp;kurze má klient zabezpečené po vyplnení a&nbsp;podpísaní záväznej prihlášky a&nbsp;uhradení požadovanej sumy z&nbsp;celkovej ceny kurzu. Záloha je minimálne 12&nbsp;€. Školné je možné uhradiť bankovým prevodom, resp. vkladom na účet, alebo v&nbsp;hotovosti v&nbsp;kancelárii spoločnosti. Na 1. vyučovaciu hodinu je potrebné preukázať sa dokladom o&nbsp;zaplatení.</li>
+      <li>Predpísaný učebný materiál si klient zabezpečuje na vlastné náklady. Spoločnosť ponúka sprostredkovanie kúpy cudzojazyčnej literatúry.</li>
+      <li>Klient sa zaväzuje uhrádzať splátky riadne a&nbsp;včas. Neuhradenie splátky zakladá právo spoločnosti pozastaviť jeho účasť na ďalšom vyučovaní.</li>
+      <li>Ak v&nbsp;kurze nie sú voľné miesta, spoločnosť navrhne klientovi primeraný náhradný kurz. Spoločnosť si vyhradzuje právo neotvoriť kurz pri nedostatočnom počte záujemcov. V&nbsp;takom prípade klientovi neodkladne vráti zaplatenú zálohu.</li>
+      <li>Pri preradení na iný kurz sa z&nbsp;uhradenej čiastky odráta cena odučených hodín ku dňu prestupu a&nbsp;zvyšný kredit sa použije na pomernú časť ceny nového kurzu.</li>
+      <li>Výška školného je záväzná pre daný školský rok. Klient podpisom prihlášky akceptuje tieto podmienky. Spoločnosť si vyhradzuje právo upraviť školné počas školského roka pri zmene počtu účastníkov kurzu podľa cenníka platného pre daný školský rok. Cenník je k&nbsp;dispozícii v&nbsp;kancelárii.</li>
+      <li>Spoločnosť si vyhradzuje právo upraviť termíny otvorenia kurzov.</li>
+      <li>Školský rok je rozdelený na zimný a&nbsp;letný semester. Celková hodinová dotácia kurzu je 120 lektorhodín za školský rok pri 2&nbsp;×&nbsp;2 lektorhodinách týždenne.</li>
+      <li>Po zložení úrovňovej skúšky aspoň na 70&nbsp;% má klient nárok na potvrdenie o&nbsp;úspešnom ukončení kurzu. Potvrdenie sa vydáva na písomnú alebo ústnu žiadosť. Ak klient skúšku nezloží, opakuje ju v&nbsp;najbližšom termíne, ktorý spoločnosť oznámi na informačnej tabuli. Ak ju nezloží ani na tretí pokus, môže byť preradený do nižšej úrovne.</li>
+    </ol>
+    <h2 id="storno">Storno podmienky</h2>
+    <ul class="body">
+      <li>Klienti s&nbsp;individuálnymi hodinami nahlásia absenciu telefonicky alebo e-mailom do kancelárie deň vopred do 16.00. Odhlásenie po 16.00 sa považuje za neskoré a&nbsp;hodina sa odpočíta z&nbsp;kreditu.</li>
+      <li>Hodina zrušená klientom individuálneho kurzu alebo po dohode všetkých účastníkov skupinového kurzu v&nbsp;deň kurzu sa účtuje 100&nbsp;% (počíta sa ako odučená).</li>
+      <li>Hodina zrušená viac ako deň vopred alebo zrušená lektorom sa odučí v&nbsp;náhradnom termíne.</li>
+      <li>Pri predčasnom ukončení kurzu z&nbsp;dôvodov na strane klienta nie je možné uplatniť zníženie ani vrátenie školného. Klient môže do 3 mesiacov od doručenia písomnej žiadosti prestúpiť do iného kurzu alebo presunúť kurzovné na inú osobu.</li>
+      <li>Za neúčasť klienta na výučbe spoločnosť neposkytuje finančnú kompenzáciu.</li>
+      <li>Zrušenie alebo odhlásenie z&nbsp;kurzu oznámi klient osobne alebo e-mailom na <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a>.</li>
+    </ul>
+    <p><a class="btn" href="{{ url('') }}#prihlaska">Späť na prihlášku</a></p>
+  </div>
+</section>
+{% endblock %}

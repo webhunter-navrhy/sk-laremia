@@ -1,0 +1,57 @@
+{
+  "slug": "sk-laremia",
+  "nazev": "LAREMIA, s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-laremia/",
+  "base": "/sk-laremia/",
+  "lang": "sk",
+  "popis": "Jazyková škola LAREMIA v Prievidzi: individuálne hodiny, dvojice, malé skupiny 3–6 ľudí, firemné a crash kurzy, detské kurzy Laremiačik, preklady a tlmočenie.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "kava.jpg",
+  "logo": "logo.svg",
+  "theme_color": "#FBFAF6",
+  "typ": "EducationalOrganization",
+  "ico": "36744441",
+  "kontakt": {
+    "email": "laremia@laremia.sk",
+    "telefon": "0948 228 435",
+    "adresa": {
+      "ulice": "Gustáva Švéniho 3E",
+      "psc": "971 01",
+      "mesto": "Prievidza",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [
+    "https://www.facebook.com/LaremiaPD"
+  ],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Prihláška z webu laremia.sk"
+  },
+  "nav": [
+    {
+      "text": "Kurzy",
+      "href": "#kurzy"
+    },
+    {
+      "text": "Laremiačik",
+      "href": "#deti"
+    },
+    {
+      "text": "Preklady",
+      "href": "#preklady"
+    },
+    {
+      "text": "Podmienky",
+      "href": "podmienky"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

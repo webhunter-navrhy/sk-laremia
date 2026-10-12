@@ -1,0 +1,120 @@
+{
+  "slug": "sk-laremia",
+  "zdroj_url": "http://laremia.sk",
+  "firma": "LAREMIA, s.r.o.",
+  "obor": [
+    "jazyková škola",
+    "preklady a tlmočenie"
+  ],
+  "ico": "36744441",
+  "ares": null,
+  "kontakty": {
+    "emaily": [
+      "laremia@laremia.sk"
+    ],
+    "telefony": [
+      "0948 228 435 (zverejnené na laremia.sk/kontakt)"
+    ],
+    "adresa": "Gustáva Švéniho, vchod 3E, 971 01 Prievidza (oproti súdu)",
+    "socialni_site": [
+      "https://www.facebook.com/LaremiaPD"
+    ]
+  },
+  "logo": {
+    "soubor": "static/logo.svg",
+    "zdroj": "http://laremia.sk/templates/laremia_v2/images/header-object.png (vektorizované potrace, zelená #8DC63F + čierna)",
+    "svetle": "static/logo-svetle.svg"
+  },
+  "barvy": {
+    "z_loga": [
+      "#8DC63F",
+      "#1d1d1b"
+    ],
+    "z_css": [
+      "#8DC63F",
+      "#384F17",
+      "#CCE5A9",
+      "#DCEDC4",
+      "#F1F8E7",
+      "#2B2B2B"
+    ],
+    "doporucene": [
+      "#8DC63F (zelená z loga)",
+      "#384F17 (tmavá zelená z ich CSS, na text)",
+      "#1d1d1b"
+    ]
+  },
+  "fotky": [
+    {
+      "soubor": "img/onas.jpg",
+      "rozmery": [
+        280,
+        210
+      ],
+      "zdroj": "http://laremia.sk/images/onas.jpg",
+      "pozn": "detská hodina, malá – max ~360 px"
+    },
+    {
+      "soubor": "img/kava.jpg",
+      "zdroj": "AI FLUX.1 Krea (HF), bez textu",
+      "pozn": "ilustračná, hodina pri káve – fakt 'pri šálke kávy alebo čaju' z ich webu"
+    },
+    {
+      "soubor": "img/detske_kurzy.png",
+      "zdroj": "http://laremia.sk/images/detske_kurzy.png",
+      "pozn": "logo Laremiačik 250×250"
+    }
+  ],
+  "fakta": [
+    {
+      "text": "individuálne hodiny, skupinové kurzy, firemné kurzy, prekladateľské a tlmočnícke služby",
+      "zdroj": "http://laremia.sk/"
+    },
+    {
+      "text": "skúsení a profesionálni lektori; učenie pri šálke kávy alebo čaju; pohodová atmosféra; malé interaktívne skupiny",
+      "zdroj": "http://laremia.sk/"
+    },
+    {
+      "text": "Private, Semi-private (dvojica), Groups 3–6 klientov, Firemné kurzy (program na mieru, vstupný audit a výstupný test), Crash kurzy (Po–Pi 10:00–13:30, 30 min obed, 20 vyuč. hodín/týždeň, nie pre úplných začiatočníkov), Doučovanie, Tlmočenie, Preklady (overené aj neoverené), cena prekladov/tlmočenia podľa jazyka a rozsahu",
+      "zdroj": "http://laremia.sk/index.php/sluzby"
+    },
+    {
+      "text": "Native Virtual – online hodiny so zahraničným lektorom, výhradne individuálne",
+      "zdroj": "http://laremia.sk/index.php/native-virtual"
+    },
+    {
+      "text": "Laremiačik: angličtina od 8 mesiacov, nemčina a španielčina od 3 rokov; 3–6 detí; 1–2× týždenne 30–55 min; ukážková hodina",
+      "zdroj": "http://laremia.sk/index.php/article?id=7"
+    },
+    {
+      "text": "Podmienky: vstupný test bez poplatku, záloha min. 12 €, platba prevodom alebo v hotovosti, 120 lektorhodín/rok pri 2×2 lh týždenne, letný a zimný semester, potvrdenie pri 70 %, storno ind. hodín deň vopred do 16:00",
+      "zdroj": "http://laremia.sk/index.php?view=article&id=9"
+    },
+    {
+      "text": "Prihláška: meno, priezvisko, telefón, e-mail, jazyk, frekvencia 1×/2× týždenne, úroveň, druh kurzu, poznámky",
+      "zdroj": "http://laremia.sk/index.php/prihlaska"
+    },
+    {
+      "text": "Jazyky v katalógu: španielčina, taliančina (Zoznam.sk – kategórie firmy); na webe 'akýkoľvek jazyk'",
+      "zdroj": "recipients.csv sk-sluzby-firmam (Zoznam.sk)"
+    },
+    {
+      "text": "OR SR, OS Trenčín, odd. Sro, vložka 17569/R; IČO 36744441",
+      "zdroj": "http://laremia.sk/index.php/kontakt + orsr.sk"
+    }
+  ],
+  "chybi": [
+    "fotky z jazykovej školy (učebňa, lektori) – teraz 1 malá fotka a 1 ilustračná",
+    "zoznam jazykov, ktoré aktuálne učíte",
+    "termíny a ceny kurzov na tento školský rok (na webe nie sú)",
+    "logo vo vyššom rozlíšení (teraz vektorizované zo starého webu)",
+    "novinky do Aktualít (stránka je prázdna)",
+    "otváracie hodiny kancelárie"
+  ],
+  "popis_webu": "",
+  "mesto": "Prievidza",
+  "jazyk_webu": "sk",
+  "osoba": "Ing. Oľga Kmeťová, konateľ (podpis v e-maile 12. 10. 2026)",
+  "cilova_skupina": "dospelí (individuálne, dvojice, skupiny), firmy, deti od 8 mesiacov (Laremiačik), školáci (doučovanie), zaneprázdnení (online Native Virtual), zákazníci prekladov a tlmočenia",
+  "ton": "pohodový, priateľský, jazyková škola pri šálke kávy; klientka nechce veľa platiť – web jednoduchý a prehľadný, žiadne prehnané efekty"
+}

@@ -1,0 +1,15 @@
+{
+  "znamka": 7,
+  "slabiny": [
+    "Slovník kurzov (PC buňky 4–5, mobil 3–6) a hned za ním Preklady a tlmočenie (PC 7, mobil 8–9) mají úplně stejnou skladbu: serifový nadpis, kurzívový podtitul, odstavec, šedé štítky a „Prihlásiť sa →“. Na mobilu to dělá asi 4 obrazovky textu bez jediného obrázku. Opravit: heslům ve Slovníku dát skutečnou podobu slovníku (velké počáteční písmeno nebo marginálie se slovním druhem, výslovnost větším písmem jako hlavní ozdobu) a na mobilu je sbalit do rozbalovacích hesel s otevřeným jen prvním. Sekci Preklady oddělit jinou skladbou, třeba jedním světle zeleným pásem se dvěma sloupci a CTA, aby za sebou nešly dvě stejné sekce.",
+    "Laremiačik (PC buňka 6, mobil 7–8): fotka z hodiny onas.jpg má jen 280 px a na mobilu je roztažená na 372 px (QA 1,33×). Vedle nadpisu je navíc malé, rozmazané klipartové logo „Detské kurzy“ se smajlíkem, které působí lacině. Opravit: fotku na mobilu omezit na max-width 280 px, nebo ji dát jako menší obrázek s rámečkem vedle textu. Logo Laremiačik buď vynechat, nebo použít jen jako malou známku u bloku s věky (od 8 mesiacov / od 3 rokov), ne vedle h2.",
+    "Sekce Ako to u nás prebieha (PC buňka 8, mobil 10) má 4 sloupce drobného šedého textu kolem 12 px, pod nimi velkou prázdnou mezeru a teprve pak Prihlášku. Telefon 0948 228 435 je přitom jen dole v kontaktu, v hlavičce ani v hero chybí. Opravit: kroky Vstupný test → Prihláška a záloha → Platba → Školský rok udělat jako čtyři kroky s většími serifovými nadpisy a textem 15–16 px, spojené zelenou linkou (#8DC63F). Mezeru před Prihláškou zmenšit na rytmus ostatních sekcí. K adrese v hero doplnit klikací telefon a e-mail."
+  ],
+  "silne": [
+    "Koncept má oporu v oboru: kurzy jako hesla ve „slovníku kurzov“ s fonetickým přepisem ([ˈpraɪvət], [kræʃ]) a výběr „Ktorý kurz je pre Vás?“, kde se podle situace dojde ke kurzu. Pro jazykovou školu je to vtipné a srozumitelné.",
+    "Brand sedí: logo LAREMIA je vlevo v hlavičce, paleta vychází z jejich CSS (#384F17 na tlačítka, světle zelené pásy) a tón „pri šálke kávy“ je převzatý z jejich webu.",
+    "Obsah je pravdivý a z briefu (věky Laremiačika, Crash kurz 10.00–13.30, záloha 12 €, 70 % ke zkoušce). AI fotka v hero je poctivě označená jako „ilustračná fotka“. Typografie Spectral + Figtree má hierarchii a háčky se kreslí správně.",
+    "Mobil nikde nepřetéká, hlavička s tlačítkem Prihláška je jasná a formulář přihlášky odpovídá jejich původním polím."
+  ],
+  "verdikt": "opravit – nápad se slovníkem je dobrý a brand i fakta sedí, ale prostředek stránky je jednotvárná stěna textu ve stejném vzoru a sekce Laremiačik má slabou fotku a klipart. Po opravě rytmu a fotek to má na 8."
+}

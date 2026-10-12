@@ -1,0 +1,5 @@
+onas.jpg      laremia.sk/images/onas.jpg (fotka klienta, 280×210)
+kava.jpg      AI – FLUX.1 Krea dev (Hugging Face), ilustračná, bez textu, 12. 10. 2026
+firma.jpg     AI – FLUX.1 Krea dev (Hugging Face), ilustračná, obrazovka notebooku rozmazaná, 12. 10. 2026
+logo.svg      vektorizované z laremia.sk/templates/laremia_v2/images/header-object.png
+laremiacik.png laremia.sk/images/detske_kurzy.png

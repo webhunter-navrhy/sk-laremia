@@ -1,0 +1,6 @@
+dist/
+.cache/
+qa/
+__pycache__/
+podklady/*.html
+podklady/*.bmp

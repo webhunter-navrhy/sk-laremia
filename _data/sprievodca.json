@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Učím sa sám, vlastným tempom",
+    "kurz": "private",
+    "heslo": "Private"
+  },
+  {
+    "text": "Chcem sa učiť s kamarátom alebo kolegom",
+    "kurz": "semi",
+    "heslo": "Semi-private"
+  },
+  {
+    "text": "Baví ma skupina",
+    "kurz": "groups",
+    "heslo": "Groups"
+  },
+  {
+    "text": "Hľadám kurz pre našu firmu",
+    "kurz": "firmy",
+    "heslo": "Firemný kurz"
+  },
+  {
+    "text": "Potrebujem to rýchlo, do týždňa",
+    "kurz": "crash",
+    "heslo": "Crash kurz"
+  },
+  {
+    "text": "Potrebujem lepšie známky v škole",
+    "kurz": "doucovanie",
+    "heslo": "Doučovanie"
+  },
+  {
+    "text": "Nemám čas chodiť do školy",
+    "kurz": "online",
+    "heslo": "Native Virtual"
+  },
+  {
+    "text": "Hľadám kurz pre dieťa",
+    "kurz": "deti",
+    "heslo": "Laremiačik"
+  }
+]

@@ -1,0 +1,33 @@
+{# Prihláška – polia podľa ich súčasného formulára. Endpoint a demo režim z _data/site.json. #}
+<form class="formular" method="post" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
+  <fieldset>
+    <legend>Kto sa prihlasuje</legend>
+    <label>Meno <input name="meno" autocomplete="given-name" required></label>
+    <label>Priezvisko <input name="priezvisko" autocomplete="family-name" required></label>
+    <label>Telefón <input name="telefon" type="tel" autocomplete="tel"></label>
+    <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+  </fieldset>
+  <fieldset>
+    <legend>Aký kurz</legend>
+    <label class="cela">Druh kurzu
+      <select name="kurz">
+        <option value="">Vyberte si</option>
+        {% for k in data.kurzy %}<option value="{{ k.id }}">{{ k.heslo }} – {{ k.druh }}</option>{% endfor %}
+        <option value="deti">Laremiačik – detský kurz</option>
+      </select>
+    </label>
+    <label>Jazyk <input name="jazyk" placeholder="napr. angličtina, taliančina"></label>
+    <label>Úroveň
+      <select name="uroven"><option value="">Vyberte si</option><option>Začiatočník</option><option>Mierne pokročilý</option><option>Pokročilý</option></select>
+    </label>
+    <label>Frekvencia
+      <select name="frekvencia"><option value="">Vyberte si</option><option>1× týždenne</option><option>2× týždenne</option></select>
+    </label>
+    <label class="cela">Poznámky <textarea name="poznamky" rows="4" placeholder="Kedy Vám to časovo vyhovuje, vek dieťaťa, téma…"></textarea></label>
+  </fieldset>
+  <label class="suhlas"><input type="checkbox" name="suhlas" required> Súhlasím so spracovaním údajov na účely prihlášky.</label>
+  <div class="past" aria-hidden="true"><label>Nevypĺňať <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+  <button type="submit" class="btn">Odoslať prihlášku</button>
+  <p class="formular-stav" role="status" aria-live="polite"></p>
+</form>

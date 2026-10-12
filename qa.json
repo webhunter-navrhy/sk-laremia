@@ -1,0 +1,66 @@
+{
+  "url": "http://localhost:8791/sk-laremia/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Web má noindex (u ostrého webu pravděpodobně chyba)",
+    "Dotykové cíle <40 px na mobilu: 1× (např. input \"\" 26×26)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 0.34,
+    "nejvetsi_obrazek_PC": {
+      "kB": 44,
+      "url": "http://localhost:8791/sk-laremia/img/kava-1280.webp"
+    },
+    "snimku_PC": 9,
+    "preneseno_mobil_MB": 0.34,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 44,
+      "url": "http://localhost:8791/sk-laremia/img/kava-1280.webp"
+    },
+    "snimku_mobil": 10,
+    "seo": {
+      "title": "LAREMIA – jazyková škola Prievidza | kurzy, preklady a tlmočenie",
+      "description": "Jazyková škola LAREMIA v Prievidzi: individuálne hodiny, dvojice, malé skupiny 3–6 ľudí, firemné a c",
+      "lang": "sk",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/sk-laremia/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 1,
+    "font_nadpis": "Spectral",
+    "font_text": "Figtree"
+  }
+}

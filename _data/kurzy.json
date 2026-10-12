@@ -1,0 +1,77 @@
+[
+  {
+    "id": "private",
+    "heslo": "Private",
+    "vyslovnost": "[ˈpraɪvət]",
+    "druh": "individuálna hodina",
+    "vyklad": "Učíte sa tempom, ktoré Vám vyhovuje, a v čase, ktorý Vám vyhovuje. Hodiny jeden na jedného sú najintenzívnejší spôsob, ako sa „ponoriť do jazyka“. Deň a čas si nastavíte sami.",
+    "fakty": [
+      "vo Vašej kancelárii, doma alebo u nás v škole",
+      "1× týždenne alebo aj každý deň"
+    ]
+  },
+  {
+    "id": "semi",
+    "heslo": "Semi-private",
+    "vyslovnost": "[ˌsemiˈpraɪvət]",
+    "druh": "individuálna hodina pre dvoch",
+    "vyklad": "Nechcete sa učiť úplne sami? Príďte s priateľom, kolegom alebo kýmkoľvek iným a vytvorte si vlastnú „dvojku“. Pre najlepšie výsledky by ste mali mať približne rovnaké znalosti jazyka.",
+    "fakty": [
+      "2 ľudia s podobnou úrovňou"
+    ]
+  },
+  {
+    "id": "groups",
+    "heslo": "Groups",
+    "vyslovnost": "[ɡruːps]",
+    "druh": "skupinový kurz",
+    "vyklad": "Skupiny ideálnej veľkosti, zamerané na praktické jazykové zručnosti, ktoré použijete v skutočnom svete. Treba sa časovo zladiť a mať porovnateľné znalosti jazyka.",
+    "fakty": [
+      "3 – 6 klientov v skupine",
+      "školský rok: 120 lektorhodín pri 2 × 2 lektorhodinách týždenne"
+    ]
+  },
+  {
+    "id": "firmy",
+    "heslo": "Firemný kurz",
+    "vyslovnost": "",
+    "druh": "pre zamestnancov",
+    "vyklad": "Vytvoríme program, ktorý bude vhodný pre všetky skupiny a situácie vo Vašej firme a bude obsahovať slovnú zásobu, ktorú zamestnanci v práci naozaj potrebujú.",
+    "fakty": [
+      "vstupný audit a výstupný test ako bonus"
+    ]
+  },
+  {
+    "id": "crash",
+    "heslo": "Crash kurz",
+    "vyslovnost": "[kræʃ]",
+    "druh": "intenzívny týždeň",
+    "vyklad": "Pre tých, ktorí sa potrebujú v jazyku zlepšiť veľmi rýchlo. Za jeden týždeň si osvojíte základné komunikačné zručnosti. Lektori sa zamerajú na tému, ktorú potrebujete: gramatiku, písanie alebo konverzáciu.",
+    "fakty": [
+      "pondelok – piatok, 10.00 – 13.30, s 30 min prestávkou na obed",
+      "20 vyučovacích hodín za týždeň",
+      "nie je vhodný pre úplných začiatočníkov"
+    ]
+  },
+  {
+    "id": "doucovanie",
+    "heslo": "Doučovanie",
+    "vyslovnost": "",
+    "druh": "pre školákov a študentov",
+    "vyklad": "Pomoc s domácimi úlohami, prípravou na testy aj na prijímacie skúšky z jazyka, s projektmi alebo s čímkoľvek, čo treba do školy.",
+    "fakty": [
+      "príprava na prijímačky z jazyka"
+    ]
+  },
+  {
+    "id": "online",
+    "heslo": "Native Virtual",
+    "vyslovnost": "[ˈneɪtɪv ˈvɜːtʃuəl]",
+    "druh": "online so zahraničným lektorom",
+    "vyklad": "Hodiny so zahraničným lektorom cez internet, priamo u Vás doma alebo v kancelárii. Pre zaneprázdnených, pre firmy, pre tých, ktorí bývajú mimo mesta, aj pred dôležitou prezentáciou.",
+    "fakty": [
+      "výhradne individuálne, s native teacherom",
+      "ušetríte čas na cestovanie"
+    ]
+  }
+]
